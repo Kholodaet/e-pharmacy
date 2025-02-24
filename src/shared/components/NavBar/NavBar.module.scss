@@ -1,0 +1,68 @@
+@import 'sharedStyles';
+
+	.navBarHeader {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 15px;
+	}
+	.linkHeader {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 1.15px solid #f1f1f1;
+		border-radius: 60px;
+		padding: 11px 26px;
+		background: $text-white-color;
+		transition: color 0.3s ease, background-color 0.3s ease;
+		span {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			color: $text-button-color;
+		}
+		&:hover {
+			transform: scale(1.1);
+			background-color: $main-color;
+			span {
+				color: #f1f1f1;
+			}
+		}
+	}
+
+	.navBarFooter {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 40px;
+		transition: color 0.3s ease, background-color 0.3s ease;
+		margin-bottom: 50px;
+	}
+
+	.linkFooter {
+		align-items: center;
+		gap: 10px;
+		font-weight: $font-weight-bold;
+		font-size: $font-size-sm;
+		line-height: 129%;
+		text-decoration: none;
+		color: inherit;
+		transition: color 0.3s ease, background-color 0.3s ease;
+		&:hover {
+			color: $text-button-color;
+			transform: scale(1.1);
+		}
+	}
+	@media screen and (min-width: $breakpoint-tablet) {
+		.navBarFooter {
+			margin-bottom: 10px;
+		}
+	}
+	@media screen and (min-width: $breakpoint-desktop) {
+		.navBarFooter {
+			margin-bottom: 0;
+			gap: 80px;
+		}
+	}
+

@@ -1,0 +1,88 @@
+@use "sharedStyles";
+
+.shopSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.shopBox {
+  display: flex;
+  flex-direction: column;
+}
+.sectorButtons {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+.titleFormSection {
+  background-color: $text-white-color;
+  border-radius: 27px;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 20px;
+}
+.buttonEdit {
+  border: 1.15px solid #f1f1f1;
+  border-radius: 30px;
+  padding: 10px 24px;
+  background: $button-color-edit;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-xs;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: $main-color;
+  &:hover {
+    background: $main-color-active;
+    color: $text-white-color;
+  }
+}
+.buttonAdd {
+  border: 1.15px solid #f1f1f1;
+  border-radius: 30px;
+  padding: 10px 24px;
+  background: $main-color;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-xs;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: $background-color;
+  &:hover {
+    background: $main-color-active;
+  }
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+  .shopSection {
+    margin-bottom: 40px;
+  }
+  .titleFormSection {
+    padding: 40px 12px;
+  }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+  .shopSection {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .titleFormSection {
+    margin-bottom: 0;
+  }
+  .shopBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .sectorButtons {
+    margin-bottom: 0px;
+  }
+}

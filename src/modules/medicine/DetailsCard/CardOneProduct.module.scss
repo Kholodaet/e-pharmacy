@@ -1,0 +1,103 @@
+@use "sharedStyles";
+
+.cardShop {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.imgShop {
+  border: $border-card;
+  border-radius: 27px;
+  padding: 14px 18px;
+  width: 335px;
+  height: 337px;
+}
+.infoShop {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  width: 335px;
+  background-color: $text-white-color;
+  padding: 20px;
+  justify-content: space-between;
+}
+.titleShopBox {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.titleBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.titleShop {
+  font-weight: $font-weight-bold;
+  font-size: $font-size-md;
+  line-height: 140%;
+  color: $text-color-main;
+}
+.suppliersShop {
+  font-weight: $font-weight-regular;
+  font-size: $font-size-xs;
+  line-height: 150%;
+  color: $placeholder-color;
+}
+
+.priceShop {
+  display: inline-block;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-md;
+  line-height: 140%;
+  color: $text-color-main;
+}
+.buttonShopBox {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.buttonDetails {
+  background: transparent;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-xs;
+  line-height: 150%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: $text-color-main;
+}
+@media screen and (min-width: $breakpoint-tablet) {
+  .cardShop {
+    flex-direction: row;
+  }
+  .imgShop {
+    max-width: 364px;
+    max-height: 284px;
+  }
+  .infoShop {
+    max-width: 324px;
+    flex-direction: row;
+  }
+  .titleShopBox {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .buttonShopBox {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+  .cardShop {
+    flex-direction: column;
+  }
+
+  .infoShop {
+    max-width: 335px;
+  }
+}

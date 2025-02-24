@@ -1,0 +1,20 @@
+@use '_breakpoints.scss' as bp;
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+
+  @include bp.mobile {
+    min-width: bp.$breakpoint-mobile;
+  }
+
+  @include bp.tablet {
+    min-width: bp.$breakpoint-tablet;
+  }
+
+  @include bp.desktop {
+    min-width: bp.$breakpoint-desktop;
+  }
+}
+
+

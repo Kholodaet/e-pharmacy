@@ -1,0 +1,34 @@
+@import 'sharedStyles';
+
+.mobileBar {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 4px;
+}
+.mobileBarLink {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1.15px solid #f1f1f1;
+	border-radius: 60px;
+	background: #f1f1f1;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 100%;
+	color: #93939a;
+	padding: 15px 20px;
+}
+.span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: $text-button-color;
+	&:hover {
+		padding: 10px 15px;
+		background-color: $main-color;
+		color: $text-white-color;
+		border-radius: 60px;
+	}
+}

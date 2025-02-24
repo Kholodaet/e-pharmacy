@@ -1,0 +1,27 @@
+@use "sharedStyles";
+
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  justify-content: space-around;
+  align-items: center;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+  background-color: $main-color;
+}
+.closeModal {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    svg {
+      transform: scale(1.2);
+    }
+  }
+}

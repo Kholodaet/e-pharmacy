@@ -1,0 +1,18 @@
+@use "sharedStyles";
+
+.medicineSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+@media screen and (min-width: $breakpoint-desktop) {
+  .medicineSection {
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-start;
+  }
+}

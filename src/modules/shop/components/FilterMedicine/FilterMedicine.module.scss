@@ -1,0 +1,83 @@
+@import 'sharedStyles';
+
+.filterSection {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin-bottom: 20px;
+}
+.selectCategory {
+	appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+	
+	background-color: $text-white-color;
+	border: 1px solid $bg-color-button;
+	border-radius: 60px;
+	min-width: 335px;
+	min-height: 44px;
+	padding: 10px 40px 10px 10px;
+	color: $text-button-cancel-color;
+	font-weight: $font-weight-regular;
+	font-size: $font-size-xs;
+	line-height: 150%;
+
+	background-image: url('../../../../assets/icons/arrow-icon.svg');
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 14px;
+
+	transition: border-color 0.3s ease;
+  
+  &:hover {
+    border-color: #999;
+  }
+}
+
+.inputSearch {
+	width: 100%;
+}
+
+.inputField {
+	background: $text-white-color;
+	border: 1px solid $bg-color-button;
+	border-radius: 60px;
+	width: 310px;
+	height: 44px;
+	padding: 0 15px;
+	&::placeholder {
+		font-weight: $font-weight-regular;
+		font-size: $font-size-xs;
+		line-height: 150%;
+		color: $text-button-cancel-color;
+	}
+}
+.iconInput {
+	transform: translate(310px, -30px);
+}
+.filterButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	border-radius: 60px;
+	padding: 13px 30px;
+	width: 116px;
+	height: 44px;
+	background: $main-color;
+	font-weight: $font-weight-medium;
+	font-size: $font-size-sm;
+	line-height: 129%;
+	color: $text-white-color;
+	&:hover {
+		background: $main-color-active;
+	}
+}
+@media screen and (min-width: $breakpoint-tablet) {
+	.filterSection {
+		flex-direction: row;
+
+	}
+}

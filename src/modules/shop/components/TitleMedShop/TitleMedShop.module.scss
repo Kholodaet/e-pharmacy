@@ -1,0 +1,77 @@
+@import 'sharedStyles';
+
+.titleMedShop {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  h2 {
+    display: block;
+    font-weight: $font-weight-bold;
+    font-size:$font-size-xxxl;
+    line-height: 114%;
+    color: $text-color-main;
+  }
+  p {
+  display: inline-block;
+  font-weight:$font-weight-regular;
+  font-size:$font-size-sm;
+  line-height: 129%;
+  color: $text-color-main;
+  margin-bottom: 10px;
+  span{
+    color: $text-button-color;
+    font-weight:$font-weight-regular;
+    font-size:$font-size-sm;
+    line-height: 129%;
+    margin-right: 6px;
+  }
+  }
+}
+.mapAdnPhone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}   
+.sectorMap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.spanMap {
+  color: $text-button-color;
+    font-weight:$font-weight-regular;
+    font-size:$font-size-sm;
+    line-height: 129%;
+}
+@media screen and (min-width: $breakpoint-tablet) {
+  .titleMedShop {
+    p{
+      margin-bottom: 10px;
+    }
+  }
+  .mapAdnPhone {
+    margin-bottom: 10px;
+  }   
+  .titleOwner {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+}
+@media screen and (min-width: $breakpoint-desktop) {
+  .titleMedShop {
+    flex-direction: row;
+    justify-content: space-between;
+    h2 {
+      margin-bottom:0px;
+      margin-right: 280px;
+    }
+    p{
+      margin-bottom: 0px;
+    }
+  }
+  .mapAdnPhone {
+    margin-bottom: 0px;
+  } 
+}

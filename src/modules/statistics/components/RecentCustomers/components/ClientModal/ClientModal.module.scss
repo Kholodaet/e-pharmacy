@@ -1,0 +1,77 @@
+@use "sharedStyles";
+
+.table {
+  width: 100%;
+}
+.clientModal {
+  position: relative;
+  border: 1px solid rgba(29, 30, 33, 0.1);
+  background: $text-white-color;
+  border-radius: 8px;
+  max-width: 439px;
+  max-height: 460px;
+  padding: 20px;
+}
+.modalTitle {
+  display: flex;
+  justify-content: center;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-md;
+  line-height: 125%;
+  color: $text-color-main;
+  padding: 16px 20px;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  background: #e7f1ed;
+  border-radius: 8px;
+  margin-bottom: 4rem;
+}
+.tableHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: self-start;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-sm;
+  line-height: 125%;
+}
+
+.headerCell {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #555;
+  font-size: 12px;
+}
+
+.headerCell span {
+  margin-top: 5px;
+  font-size: 14px;
+  color: $text-color-main;
+}
+.tableBody {
+  background: $text-white-color;
+  border-radius: 8px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tableCell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-size: 14px;
+}
+.tableCell span {
+  font-size: 14px;
+  color: $text-color-main;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}

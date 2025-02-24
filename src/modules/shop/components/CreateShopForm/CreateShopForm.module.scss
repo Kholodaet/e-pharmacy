@@ -1,0 +1,108 @@
+@import 'sharedStyles';
+
+.createShopForm {
+	display: flex;
+	gap: 15px;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px;
+}
+.createShopForm div {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.createShopForm span {
+	position: absolute;
+	gap: 5px;
+	bottom: -12px;
+	padding-left: 20px;
+	font-size: 10px;
+	color: red;
+}
+
+.createShopForm label {
+	font-weight: $font-weight-bold;
+	font-size: $font-size-sm;
+	line-height: 129%;
+	color: $text-color-main;
+	margin-left: 21px;
+}
+.createShopForm input {
+	border: $border-input;
+	border-radius: 60px;
+	padding: 10px 20px;
+	font-weight: $font-weight-regular;
+	font-size: $font-size-xs;
+	line-height: 150%;
+	color: $text-button-cancel-color;
+
+	&::placeholder {
+		font-weight: $font-weight-regular;
+		font-size: 1$font-size-xs;
+		line-height: 150%;
+		color: $placeholder-color;
+	}
+}
+.createShopForm button {
+	border-radius: 60px;
+	padding: 13px 26px;
+	background: $main-color;
+	font-weight: $font-weight-medium;
+	font-size: $font-size-sm;
+	line-height: 129%;
+	color: $background-color;
+	max-width: 155px;
+}
+
+.delivery {
+	position: relative;
+	display: flex;
+	gap: 10px;
+	margin-bottom: 20px;
+	p {
+		font-weight: $font-weight-bold;
+		font-size: $font-size-sm;
+		line-height: 129%;
+		color: $text-color-main;
+		margin-bottom: 10px;
+	}
+	span {
+		position: absolute;
+		gap: 5px;
+		bottom: -12px;
+		padding-left: 20px;
+		font-size: 10px;
+		color: red;
+	}
+}
+.radioGroup {
+	display: flex;
+	flex-direction: row !important;
+	gap: 10px;
+	input {
+		align-items: center;
+	}
+	label {
+		margin: 0;
+	}
+}
+@media screen and (min-width: $breakpoint-tablet) {
+	.createShopForm {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 10px;
+		input {
+			min-width: 60px;
+		}
+	}
+	.delivery {
+    grid-column: 1 / 2; 
+  }
+}
+@media screen and (min-width: $breakpoint-desktop) {
+	.delivery {
+		margin-bottom: 70px;
+  }
+}

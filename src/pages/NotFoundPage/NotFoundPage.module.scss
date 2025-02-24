@@ -1,0 +1,11 @@
+@use "../../styles/_mixins.scss" as *;
+@use "sharedStyles";
+
+.notFoundPage {
+  @include flexCenter;
+  height: 50vh;
+  font-size: large;
+  color: $text-button-color;
+  font-style: italic;
+  font-weight: 600;
+}

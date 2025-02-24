@@ -1,0 +1,63 @@
+@use "sharedStyles";
+
+.loginSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: center;
+  padding: 20px;
+}
+
+.titleSection {
+  margin-bottom: 15px;
+  img {
+    width: 95px;
+    height: 93px;
+    transform: translate(220px, 38px);
+  }
+  h1 {
+    font-weight: 600;
+    color: #1d1e21;
+    font-size: 28px;
+    line-height: 121%;
+    font-family: "Inter", sans-serif;
+    max-width: 360px;
+    span {
+      color: #59b17a;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .formSection {
+    display: flex;
+    align-items: start;
+  }
+  .titleSection {
+    margin-bottom: 15px;
+    h1 {
+      font-size: 52px;
+      max-width: 614px;
+    }
+    img {
+      width: 179px;
+      height: 175px;
+      transform: translate(400px, 80px);
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .loginSection {
+    padding: 20px 80px;
+  }
+  .loginTablet {
+    display: flex;
+    align-items: end;
+    gap: 60px;
+  }
+  .formSection {
+    display: flex;
+    flex-direction: column;
+  }
+}

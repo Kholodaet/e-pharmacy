@@ -1,0 +1,1 @@
+export {default as RecentCustomers} from './RecentCustomers.jsx'

@@ -1,0 +1,26 @@
+@import 'sharedStyles';
+
+.modalContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+	padding: 40px 20px;
+	background: $text-white-color;
+  width: 50%;
+  text-align: justify;
+  h2 {
+  font-weight: $font-weight-bold;
+	font-size: $font-size-md;
+	line-height: 140%;
+	color: $text-color-main;
+  margin-bottom: 18px;
+  }
+  span {
+		font-weight: $font-weight-regular;
+		font-size: $font-size-xs;
+		line-height: 150%;
+		color: $text-color-main;
+		margin-bottom: 28px;
+	}
+}

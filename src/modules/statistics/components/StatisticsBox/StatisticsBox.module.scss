@@ -1,0 +1,67 @@
+@use "sharedStyles";
+
+.statisticsBox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+  li {
+    border: 1px solid $bg-color-button;
+    border-radius: 8px;
+    padding: 14px;
+    min-width: 124px;
+    min-height: 88px;
+    background: $text-white-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    p {
+      font-weight: $font-weight-bold;
+      font-size: $font-size-md;
+      line-height: 125%;
+      color: $text-color-main;
+      padding-left: 7px;
+    }
+  }
+}
+.sector {
+  display: flex;
+  gap: 14px;
+  padding: 6px;
+  span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 117%;
+    color: $text-button-cancel-color;
+  }
+}
+.statisticsBox li:hover {
+  border-color: #4caf50;
+}
+.statisticsBox li.active {
+  border-color: #4caf50;
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+  .statisticsBox {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 20px;
+    li {
+      p {
+        font-size: $font-size-xxl;
+      }
+    }
+  }
+  .statisticsBox li {
+    min-width: 180px;
+  }
+}
+@media screen and (min-width: $breakpoint-desktop) {
+  .statisticsBox {
+    li {
+      min-width: 240px;
+    }
+  }
+}

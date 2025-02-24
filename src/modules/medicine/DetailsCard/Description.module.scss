@@ -1,0 +1,23 @@
+@use "sharedStyles";
+
+.descriptionBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  h4 {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-md;
+    line-height: 129%;
+    color: $text-second-color;
+  }
+  p {
+    font-weight: $font-weight-regular;
+    font-size: $font-size-sm;
+    line-height: 150%;
+    color: $text-second-color;
+  }
+}
+@media screen and (min-width: $breakpoint-tablet) {
+  .descriptionBox {
+  }
+}

@@ -1,0 +1,90 @@
+@use "sharedStyles";
+
+.recentCustomers {
+  border: 1px solid rgba(29, 30, 33, 0.1);
+  border-radius: 8px;
+  background: $text-white-color;
+  margin-bottom: 20px;
+
+  h2 {
+    display: block;
+    border-radius: 8px 8px 0 0;
+    background: #e7f1ed;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-md;
+    line-height: 125%;
+    color: $text-color-main;
+    padding: 16px 20px;
+  }
+}
+.tableContainer {
+  width: 100%;
+  max-width: 335px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.table {
+  background: $text-white-color;
+  border-radius: 8px;
+  border-collapse: collapse;
+  min-width: 335px;
+  width: 100%;
+  th,
+  td {
+    border: 1px solid rgba(29, 30, 33, 0.1);
+    padding: 15px 10px;
+  }
+
+  th:first-child,
+  td:first-child {
+    border-left: none;
+  }
+
+  th:last-child,
+  td:last-child {
+    border-right: none;
+  }
+
+  td {
+    border-bottom: none;
+  }
+
+  th {
+    border-top: none;
+  }
+}
+
+.tableHeader {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 117%;
+  color: $text-button-cancel-color;
+}
+.tableBody {
+  font-weight: 500;
+  font-size: $font-size-xs;
+  line-height: 117%;
+  color: $text-color-main;
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+  .recentCustomers h2 {
+    font-size: $font-size-lg;
+  }
+  .tableHeader {
+    font-size: 14px;
+  }
+  .tableBody {
+    font-size: $font-size-lg;
+  }
+  .tableContainer {
+    max-width: 100%;
+  }
+  .table {
+    width: 100%;
+    min-width: auto;
+  }
+  .table td {
+    padding: 22px 15px;
+  }
+}

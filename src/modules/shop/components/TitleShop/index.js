@@ -1,0 +1,1 @@
+export {default as TitleShop} from './TitleShop.jsx'

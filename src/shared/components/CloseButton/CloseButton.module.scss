@@ -1,0 +1,20 @@
+@import 'sharedStyles';
+
+.closeButton {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	background-color: transparent;
+	border: none;
+	svg {
+		font-size: 24px;
+		transition: transform 0.3s ease;
+	}
+	&:hover,
+	&:focus {
+		background-color: transparent;
+		svg {
+			transform: scale(1.2);
+		}
+	}
+}

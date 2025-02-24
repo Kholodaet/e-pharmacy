@@ -1,0 +1,30 @@
+@import 'sharedStyles';
+
+.shopTitle {
+	margin-bottom: 30px;
+	padding:0 20px;;
+	h2 {
+		font-weight: $font-weight-bold;
+		font-size: $font-size-xl;
+		line-height: 114%;
+		color: $text-color-main;
+		margin-bottom: 10px;
+	}
+	p {
+		font-weight: $font-weight-regular;
+		font-size: $font-size-sm;
+		line-height: 125%;
+		color: $text-second-color;
+	}
+}
+// @media screen and (min-width: $breakpoint-tablet) {
+// 	.shopTitle {
+// 		margin-bottom: 40px;
+// 		h2 {
+// 			margin-bottom: 20px;
+// 		}
+// 		p {
+// 			max-width: 390px;
+// 		}
+// 	}
+// }

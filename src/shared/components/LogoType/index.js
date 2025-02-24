@@ -1,0 +1,1 @@
+export {default as LogoType} from './LogoType.jsx'

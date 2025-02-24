@@ -1,0 +1,142 @@
+@use "../ModalButton/mixinsModalButton.scss" as m;
+@use "sharedStyles";
+
+.addFormMedicine {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  border-radius: 20px;
+  background: $text-white-color;
+  padding: 40px 20px;
+  h2 {
+    text-align: center;
+    font-weight: $font-weight-bold;
+    font-size: 20px;
+    line-height: 140%;
+    color: $text-color-main;
+    margin-bottom: 15px;
+  }
+  label {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-sm;
+    line-height: 129%;
+    color: $text-color-main;
+    margin-bottom: 10px;
+    padding-left: 20px;
+  }
+  input {
+    border: $border-input;
+    border-radius: 60px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: $font-size-xs;
+    line-height: 150%;
+    color: $placeholder-color;
+  }
+
+  textarea {
+    border: $border-input;
+    border-radius: 15px;
+    padding: 20px 20px;
+    font-weight: 400;
+    font-size: $font-size-xs;
+    line-height: 150%;
+    color: $placeholder-color;
+  }
+  input:hover,
+  textarea:hover {
+    border: 1px solid $main-color;
+  }
+}
+.addInputBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.addImageBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  img {
+    display: block;
+    border-radius: 20px;
+    margin: 0 auto;
+    object-fit: cover;
+    margin-bottom: 15px;
+    width: 40%;
+  }
+}
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+.addInputButtonBox {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.submitButton {
+  @include m.modalButton($main-color, $background-color, 13px 28px);
+}
+
+.cancelButton {
+  @include m.modalButton(
+    $bg-color-button,
+    $text-button-cancel-color,
+    13px 46px
+  );
+}
+.closeButton {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: transparent;
+  border: none;
+  svg {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+  }
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    svg {
+      transform: scale(1.2);
+    }
+  }
+}
+.uploadButton {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-xs;
+  line-height: 150%;
+  text-decoration: underline;
+  color: $placeholder-color;
+  cursor: pointer;
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+  .addFormMedicine {
+    max-width: 568px;
+    max-height: 652px;
+    input {
+      width: 230px;
+      height: 44px;
+    }
+  }
+  .addInputBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+  }
+}

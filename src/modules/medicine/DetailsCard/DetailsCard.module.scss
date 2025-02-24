@@ -1,0 +1,54 @@
+@use "sharedStyles";
+
+.detailsBox {
+  border-radius: 27px;
+  background-color: $text-white-color;
+  padding: 20px;
+  width: 335px;
+  max-height: 783px;
+}
+.navBox {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  padding: 10px 16px;
+  background: $main-color;
+  font-weight: $font-weight-medium;
+  font-size: $font-size-sm;
+  line-height: 100%;
+  text-align: center;
+  color: $background-color;
+  &:hover {
+    transition: color 0.3s ease;
+    transform: scale(1.1);
+  }
+}
+.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  padding: 8px 25px;
+  background: $button-color-edit;
+  font-weight: $font-weight-medium;
+  font-size: $font-size-sm;
+  letter-spacing: -0.05em;
+  text-align: center;
+  color: $main-color;
+  &:hover {
+    transition: color 0.3s ease;
+    transform: scale(1.1);
+  }
+}
+@media screen and (min-width: $breakpoint-tablet) {
+  .detailsBox {
+    width: 704px;
+  }
+}

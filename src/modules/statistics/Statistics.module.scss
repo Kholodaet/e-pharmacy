@@ -1,0 +1,32 @@
+@use "sharedStyles";
+
+.statisticsSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 20px;
+}
+
+.statisticsTitle {
+  font-weight: $font-weight-bold;
+  font-size: $font-size-xxxl;
+  line-height: 114%;
+  color: $text-color-main;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: $breakpoint-tablet) {
+  .statisticsSection {
+  }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+  .customersExpensesSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}

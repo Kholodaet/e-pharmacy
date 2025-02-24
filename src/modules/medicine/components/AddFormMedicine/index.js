@@ -1,0 +1,1 @@
+export {default as AddFormMedicine} from './AddFormMedicine.jsx'

@@ -1,0 +1,35 @@
+@import 'sharedStyles';
+
+.socialIcons {
+  display: flex;
+  gap: 15px;
+}
+.socialIcons li {
+  position: relative;
+  font-size: 18px; 
+  border:1px solid rgba(247, 248, 250, 0.3);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+  transition: border-color 0.3s ease, color 0.3s ease;
+  &:hover,
+  &:focus {
+    border-color: $text-button-color; 
+    
+    .iconStyle {
+      color: $text-button-color; 
+    }
+  }
+}
+
+.iconStyle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: color 0.3s ease;
+  color: rgba(247, 248, 250);
+}
