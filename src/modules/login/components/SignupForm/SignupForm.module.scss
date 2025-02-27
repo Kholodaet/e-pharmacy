@@ -1,110 +1,105 @@
-@import 'sharedStyles';
+@use "sharedStyles";
 
 .formBox {
-	display: flex;
-	flex-direction: column;
-	gap: 12px;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
 
-	.inputBox {
-		display: flex;
-		flex-direction: column;
-		gap: 12px;
-		width: 100%;
-		input {
-			border: 1px solid rgba(29, 30, 33, 0.1);
-			border-radius: 60px;
-			padding: 12px 20px;
-			background: #fff;
-			font-weight: 400;
-			font-size: 12px;
-			line-height: 150%;
-			color: rgba(29, 30, 33, 0.4);
-			outline: none;
-		
-		}
-		 div {
-			position: relative;
-			display: flex;
-			flex-direction: column;
-			gap: 5px;
-			width: 100%;
-
-		}
-		span {
-			position: absolute;
-			gap: 5px;
-			bottom: -12px;
-			padding-left: 20px;
-			font-size: 10px;
-			color: red;
-		}
-		
-	}
-	button {
-		border-radius: 60px;
-		padding: 12px 139px;
-		height: 44px;
-		background: #59b17a;
-		font-weight: 500;
-		font-size: 14px;
-		line-height: 129%;
-		color: #fff;
-		width: 100%;
-		margin-top: 50px;
-	}
-	a {
-		font-weight: 400;
-		font-size: 12px;
-		line-height: 150%;
-		color: rgba(29, 30, 33, 0.4);
-	}
+  .inputBox {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    input {
+      border: 1px solid rgba(29, 30, 33, 0.1);
+      border-radius: 60px;
+      padding: 12px 20px;
+      background: #fff;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 150%;
+      color: rgba(29, 30, 33, 0.4);
+      outline: none;
+    }
+    div {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      width: 100%;
+    }
+    span {
+      position: absolute;
+      gap: 5px;
+      bottom: -12px;
+      padding-left: 20px;
+      font-size: 10px;
+      color: red;
+    }
+  }
+  button {
+    border-radius: 60px;
+    padding: 12px 139px;
+    height: 44px;
+    background: #59b17a;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129%;
+    color: #fff;
+    width: 100%;
+    margin-top: 50px;
+  }
+  a {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: rgba(29, 30, 33, 0.4);
+  }
 }
 
 button:hover {
-	background-color: darken(#59b17a, 10%);
-	transform: scale(1.02);
-	transition: 0.3s;
+  background-color: #4d9e6b;
+  transform: scale(1.02);
+  transition: 0.3s;
 }
 
 .createShopForm div {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	gap: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 .createShopForm span {
-	position: absolute;
-	gap: 5px;
-	bottom: -12px;
-	padding-left: 20px;
-	font-size: 10px;
-	color: red;
+  position: absolute;
+  gap: 5px;
+  bottom: -12px;
+  padding-left: 20px;
+  font-size: 10px;
+  color: red;
 }
 
 @media (min-width: 768px) {
-	.formBox {
-		align-items: flex-start; 
-		justify-content: flex-start;
-		.inputBox {
-			display: grid;
-			grid-template-columns: repeat(2, 1fr); 
-			gap: 14px; 
-			input {
-				width: 240px;
-			}
-		}
-		button {
-			width: auto;
-			margin-top: 50px;
-			padding: 13px 116px; 
-			margin-left: 0;
-			
-		}
-		a {
-			margin-left: 70px;
-		}
-		
-	}
+  .formBox {
+    align-items: flex-start;
+    justify-content: flex-start;
+    .inputBox {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      input {
+        width: 240px;
+      }
+    }
+    button {
+      width: auto;
+      margin-top: 50px;
+      padding: 13px 116px;
+      margin-left: 0;
+    }
+    a {
+      margin-left: 70px;
+    }
+  }
 }

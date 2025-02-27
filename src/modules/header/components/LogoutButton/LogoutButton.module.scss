@@ -1,19 +1,19 @@
-@import 'sharedStyles';
+@use "sharedStyles";
 .logoutButton {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: $border-button-logout;
-	border-radius: 60px;
-	padding: 12px 28px;
-	font-weight: $font-weight-regular;
-	font-size: $font-size-sm;
-	line-height: 100%;
-	color: $main-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: $border-button-logout;
+  border-radius: 60px;
+  padding: 12px 28px;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-sm;
+  line-height: 100%;
+  color: $main-color;
 
-	&:hover {
-		background-color: $main-color;
-		color: $text-white-color;
-		transform: scale(1.1);
-	}
+  &:hover {
+    background-color: $main-color;
+    color: $text-white-color;
+    transform: scale(1.1);
+  }
 }

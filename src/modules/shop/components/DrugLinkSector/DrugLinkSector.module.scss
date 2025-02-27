@@ -1,49 +1,49 @@
-@import 'sharedStyles';
+@use "sharedStyles";
 
 .DrugLinkSector {
-	display: flex;
-	gap: 5px;
-	border-bottom: 1px solid rgba(29, 30, 33, 0.12);
-	margin-bottom: 30px;
-	padding-bottom: 14px;
+  display: flex;
+  gap: 5px;
+  border-bottom: 1px solid rgba(29, 30, 33, 0.12);
+  margin-bottom: 30px;
+  padding-bottom: 14px;
 
-	.NavLink {
-		position: relative;
-		background-color: transparent;
-		border: none;
-		font-family: var(--font-family);
-		font-weight: $font-weight-regular;
-		font-size: $font-size-sm;
-		line-height: 129%;
-		color: $text-button-color;
-		text-decoration: none;
-		padding: 5px;
+  .NavLink {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    font-family: var(--font-family);
+    font-weight: $font-weight-regular;
+    font-size: $font-size-sm;
+    line-height: 129%;
+    color: $text-button-color;
+    text-decoration: none;
+    padding: 5px;
 
-		&:hover {
-			color: $text-color-main;
-		}
+    &:hover {
+      color: $text-color-main;
+    }
 
-		&::after {
-			content: '';
-			position: absolute;
-			width: 0;
-			height: 1px;
-			left: 0;
-			bottom: -14px;
-			background-color: $main-color;
-			transition: 0.3s ease;
-		}
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 1px;
+      left: 0;
+      bottom: -14px;
+      background-color: $main-color;
+      transition: 0.3s ease;
+    }
 
-		&:hover::after {
-			width: 100%;
-		}
+    &:hover::after {
+      width: 100%;
+    }
 
-		&.active {
-			color: $text-color-main;
-		}
+    &.active {
+      color: $text-color-main;
+    }
 
-		&.active::after {
-			width: 100%;
-		}
-	}
+    &.active::after {
+      width: 100%;
+    }
+  }
 }
