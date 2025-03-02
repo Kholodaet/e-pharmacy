@@ -17,7 +17,7 @@ export default defineConfig({
       "@shared": path.resolve(__dirname, "./src/shared"),
       "@modules": path.resolve(__dirname, "./src/modules"),
       "@config": path.resolve(__dirname, "./src/config"),
-      "@styles": path.resolve(__dirname, "./src/styles"), // Коректний alias для стилів
+      "@styles": path.resolve(__dirname, "./src/styles"),
     },
   },
   css: {
